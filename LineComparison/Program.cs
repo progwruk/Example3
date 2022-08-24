@@ -12,6 +12,16 @@ namespace LineComparison
             Comparision LineComparision = new Comparision(1, 2, 3, 4);
             double line2 = LineComparision.CalculateLength();
             Console.WriteLine("Length of second line "+line2);
+            if (line1.CompareTo(line2) == 0)
+            {
+                Console.WriteLine("Both lines are same");
+                return;
+            }
+                
+            if (line1.CompareTo(line2) > 0)
+                Console.WriteLine("Line 1 is greater than line 2");
+            else
+                Console.WriteLine("Line 2 is greater than line 1");
         }
     }
 }
